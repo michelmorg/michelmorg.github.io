@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>风月大帝-作品简介、人物设定与阅读指南</title>
+<meta name="description" content="风月大帝是一部以东方玄幻为背景的网络小说，本文整理作品简介、主要人物设定、世界观脉络、阅读顺序与常见问题，帮助读者快速了解风月大帝的故事内容与阅读方式。">
+<meta name="keywords" content="风月大帝,风月大帝小说,风月大帝简介,风月大帝人物,玄幻小说,网络小说阅读">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#1b1a2e;
+  --ink-soft:#4a4863;
+  --paper:#f6f3ec;
+  --paper-2:#fffdf8;
+  --gold:#b8892f;
+  --gold-soft:#e0c37c;
+  --plum:#7a2b4a;
+  --plum-soft:#a8506e;
+  --line:#e2d9c8;
+  --shadow:0 10px 30px rgba(27,26,46,.08);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Songti SC","SimSun","Noto Serif SC",Georgia,serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1160px,92%);margin:0 auto}
+
+/* ---------- 页眉 ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(246,243,236,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:14px 0;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{
+  width:44px;height:44px;flex:0 0 44px;border-radius:12px;
+  background:linear-gradient(140deg,var(--plum),var(--gold));
+  color:#fff;display:grid;place-items:center;
+  font-size:20px;font-weight:700;letter-spacing:1px;
+  box-shadow:0 6px 16px rgba(122,43,74,.28);
+}
+.brand-text b{display:block;font-size:19px;letter-spacing:2px}
+.brand-text span{display:block;font-size:12px;color:var(--ink-soft);letter-spacing:3px}
+.main-nav{display:flex;gap:6px;flex-wrap:wrap}
+.main-nav a{
+  padding:8px 14px;border-radius:999px;font-size:15px;color:var(--ink-soft);
+  transition:.22s;white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a.active{
+  background:var(--plum);color:#fff;box-shadow:0 6px 14px rgba(122,43,74,.24);
+}
+.nav-toggle{
+  display:none;background:none;border:1px solid var(--line);
+  border-radius:10px;padding:8px 12px;font-size:16px;color:var(--ink);cursor:pointer;
+}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1000px 460px at 82% -12%,rgba(184,137,47,.20),transparent 62%),
+    radial-gradient(760px 420px at 6% 108%,rgba(122,43,74,.18),transparent 60%),
+    linear-gradient(180deg,#fbf8f1,#f2ece0);
+  border-bottom:1px solid var(--line);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:repeating-linear-gradient(90deg,rgba(27,26,46,.035) 0 1px,transparent 1px 68px);
+}
+.hero-inner{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.25fr .95fr;gap:48px;
+  padding:64px 0 58px;align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;letter-spacing:2px;color:var(--plum);
+  border:1px solid var(--gold-soft);background:#fffdf7;
+  padding:6px 14px;border-radius:999px;margin-bottom:20px;
+}
+.hero h1{
+  font-size:clamp(32px,4.6vw,52px);
+  line-height:1.24;letter-spacing:2px;margin-bottom:18px;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,var(--plum),var(--gold));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{
+  font-size:17px;color:var(--ink-soft);max-width:620px;margin-bottom:26px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:999px;
+  font-size:15px;letter-spacing:1px;transition:.24s;border:1px solid transparent;cursor:pointer;
+}
+.btn-primary{background:var(--plum);color:#fff;box-shadow:0 10px 22px rgba(122,43,74,.28)}
+.btn-primary:hover{background:#63223c;transform:translateY(-2px)}
+.btn-ghost{border-color:var(--gold);color:var(--gold);background:transparent}
+.btn-ghost:hover{background:var(--gold);color:#fff;transform:translateY(-2px)}
+.hero-facts{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px;
+  max-width:560px;
+}
+.fact{
+  background:#fffdf8;border:1px solid var(--line);border-radius:14px;
+  padding:14px 16px;box-shadow:var(--shadow);
+}
+.fact b{display:block;font-size:20px;color:var(--plum);letter-spacing:1px}
+.fact span{font-size:13px;color:var(--ink-soft)}
+
+/* 首屏侧栏书卡 */
+.book-card{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:20px;
+  padding:26px;box-shadow:var(--shadow);position:relative;overflow:hidden;
+}
+.book-card::before{
+  content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;
+  border-radius:50%;background:radial-gradient(circle,rgba(184,137,47,.22),transparent 70%);
+}
+.book-cover{
+  height:150px;border-radius:14px;margin-bottom:18px;
+  background:linear-gradient(135deg,#2a2140,#5c2a45 55%,#b8892f);
+  display:grid;place-items:center;color:#f4e9cf;letter-spacing:8px;font-size:24px;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);
+}
+.book-card h3{font-size:19px;margin-bottom:10px;letter-spacing:1px}
+.book-card ul{list-style:none;font-size:14.5px;color:var(--ink-soft)}
+.book-card li{
+  display:flex;justify-content:space-between;gap:12px;
+  padding:9px 0;border-bottom:1px dashed var(--line);
+}
+.book-card li:last-child{border-bottom:none}
+.book-card li span:last-child{color:var(--ink);font-weight:600}
+
+/* ---------- 通用区块 ---------- */
+.section{padding:66px 0}
+.section.alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-head{margin-bottom:34px;max-width:760px}
+.section-head .kicker{
+  font-size:13px;letter-spacing:4px;color:var(--gold);margin-bottom:10px;display:block;
+}
+.section-head h2{font-size:clamp(23px,2.7vw,30px);letter-spacing:1.5px;margin-bottom:12px}
+.section-head p{color:var(--ink-soft);font-size:16px}
+
+/* 简介两栏 */
+.intro-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:start}
+.prose p{margin-bottom:16px;font-size:16.5px;color:#33314a}
+.prose p strong{color:var(--plum)}
+.quote-box{
+  border-left:3px solid var(--gold);background:#fffdf6;
+  padding:18px 22px;border-radius:0 12px 12px 0;color:var(--ink-soft);
+  font-size:15.5px;margin:22px 0;
+}
+.aside-panel{
+  background:#fffdf8;border:1px solid var(--line);border-radius:18px;
+  padding:24px;box-shadow:var(--shadow);
+}
+.aside-panel h3{font-size:17px;margin-bottom:14px;letter-spacing:1px}
+.chip-list{display:flex;flex-wrap:wrap;gap:9px}
+.chip{
+  font-size:13.5px;padding:6px 13px;border-radius:999px;
+  background:#f3ece0;color:var(--plum);border:1px solid var(--line);
+}
+
+/* 人物卡片 */
+.char-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.char-card{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:16px;
+  padding:22px;transition:.25s;box-shadow:var(--shadow);
+}
+.char-card:hover{transform:translateY(-4px);border-color:var(--gold-soft)}
+.char-avatar{
+  width:52px;height:52px;border-radius:14px;display:grid;place-items:center;
+  font-size:20px;color:#fff;margin-bottom:14px;letter-spacing:1px;
+  background:linear-gradient(135deg,var(--plum),var(--plum-soft));
+}
+.char-card:nth-child(2n) .char-avatar{background:linear-gradient(135deg,#8a6420,var(--gold-soft));color:#3a2a06}
+.char-card:nth-child(3n) .char-avatar{background:linear-gradient(135deg,#2f3a63,#5d6da3)}
+.char-card:nth-child(4n) .char-avatar{background:linear-gradient(135deg,#3c5c4a,#6f9678)}
+.char-card h3{font-size:17px;margin-bottom:6px}
+.char-role{font-size:12.5px;letter-spacing:2px;color:var(--gold);margin-bottom:10px;display:block}
+.char-card p{font-size:14.5px;color:var(--ink-soft)}
+
+/* 世界观脉络 时间轴 */
+.lore{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.lore-item{
+  position:relative;background:#fffdf8;border:1px solid var(--line);
+  border-radius:16px;padding:24px 22px;box-shadow:var(--shadow);
+}
+.lore-item b{
+  display:inline-block;font-size:13px;letter-spacing:2px;color:#fff;
+  background:var(--plum);border-radius:8px;padding:4px 11px;margin-bottom:14px;
+}
+.lore-item h3{font-size:17px;margin-bottom:10px}
+.lore-item p{font-size:14.5px;color:var(--ink-soft)}
+
+/* 阅读指南列表 */
+.guide-list{display:grid;gap:16px}
+.guide-item{
+  display:grid;grid-template-columns:56px 1fr;gap:18px;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:16px;
+  padding:22px 24px;box-shadow:var(--shadow);
+}
+.guide-num{
+  width:56px;height:56px;border-radius:14px;display:grid;place-items:center;
+  font-size:20px;font-weight:700;color:var(--plum);
+  background:#f4ecdd;border:1px solid var(--gold-soft);
+}
+.guide-item h3{font-size:17.5px;margin-bottom:8px}
+.guide-item p{font-size:15px;color:var(--ink-soft)}
+
+/* 章节速览 */
+.chapter-table{
+  width:100%;border-collapse:collapse;background:var(--paper-2);
+  border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);
+}
+.chapter-table th,.chapter-table td{
+  padding:14px 18px;text-align:left;font-size:15px;border-bottom:1px solid var(--line);
+}
+.chapter-table th{background:#f2ebdd;letter-spacing:1px;font-size:14px;color:var(--ink)}
+.chapter-table tr:last-child td{border-bottom:none}
+.chapter-table td:first-child{color:var(--plum);font-weight:600;white-space:nowrap}
+.chapter-table tbody tr:hover{background:#fdfaf3}
+
+/* FAQ */
+.faq-list{display:grid;gap:14px;max-width:900px}
+.faq-item{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
+  padding:20px 24px;box-shadow:var(--shadow);
+}
+.faq-item h3{font-size:16.5px;margin-bottom:9px;color:var(--plum)}
+.faq-item h3::before{content:"问 ";font-size:13px;color:var(--gold);letter-spacing:1px}
+.faq-item p{font-size:15px;color:var(--ink-soft)}
+
+/* 页脚 */
+.site-footer{
+  background:#1f1c2e;color:#c9c5da;padding:52px 0 26px;margin-top:0;
+}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px;margin-bottom:34px}
+.site-footer h4{color:#f3ead6;font-size:16px;letter-spacing:1.5px;margin-bottom:14px}
+.site-footer p{font-size:14px;color:#a9a4c0;line-height:1.9}
+.footer-links{list-style:none;font-size:14px}
+.footer-links li{margin-bottom:9px}
+.footer-links a{color:#a9a4c0;transition:.2s}
+.footer-links a:hover{color:var(--gold-soft)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:20px;
+  font-size:13px;color:#8b86a6;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:36px;padding:48px 0}
+  .intro-grid{grid-template-columns:1fr;gap:28px}
+  .char-grid{grid-template-columns:repeat(2,1fr)}
+  .lore{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .nav-toggle{display:block}
+  .main-nav{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    flex-direction:column;background:var(--paper-2);
+    border-bottom:1px solid var(--line);padding:12px 6%;gap:4px;
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:11px 14px;border-radius:10px}
+  .header-inner{position:relative}
+  .hero-facts{grid-template-columns:1fr}
+  .char-grid{grid-template-columns:1fr}
+  .lore{grid-template-columns:1fr}
+  .guide-item{grid-template-columns:1fr;gap:12px}
+  .section{padding:48px 0}
+  .chapter-table th,.chapter-table td{padding:12px 13px;font-size:14px}
+  .footer-grid{grid-template-columns:1fr;gap:24px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">风</span>
+      <span class="brand-text">
+        <b>风月大帝</b>
+        <span>作品资料站</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="展开导航">☰ 目录</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#intro" class="active">作品简介</a>
+      <a href="#characters">人物设定</a>
+      <a href="#lore">世界观</a>
+      <a href="#guide">阅读指南</a>
+      <a href="#chapters">章节速览</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-tag">东方玄幻 · 长篇网络小说</span>
+        <h1>风月大帝：<em>一部以风月为名、以帝路为骨的东方玄幻</em></h1>
+        <p class="lead">
+          “风月大帝”常被读者用来指代一部以东方玄幻为底色、围绕少年崛起与帝位争夺展开的长篇网络小说。
+          本页把作品简介、人物关系、世界观脉络、阅读顺序与常见疑问集中整理在一起，
+          方便第一次接触这个名字的读者先弄清楚它讲的是什么，再决定从哪里读起。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#intro">先看作品简介</a>
+          <a class="btn btn-ghost" href="#guide">阅读顺序建议</a>
+        </div>
+        <div class="hero-facts">
+          <div class="fact"><b>玄幻修真</b><span>题材定位</span></div>
+          <div class="fact"><b>长篇连载</b><span>篇幅形态</span></div>
+          <div class="fact"><b>帝路争锋</b><span>核心主线</span></div>
+        </div>
+      </div>
+
+      <aside class="book-card">
+        <div class="book-cover">风月大帝</div>
+        <h3>作品档案速览</h3>
+        <ul>
+          <li><span>作品名称</span><span>风月大帝</span></li>
+          <li><span>题材类型</span><span>东方玄幻</span></li>
+          <li><span>叙事视角</span><span>第三人称</span></li>
+          <li><span>核心矛盾</span><span>帝位与道途</span></li>
+          <li><span>适合读者</span><span>玄幻长篇爱好者</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 作品简介 -->
+  <section class="section" id="intro">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">作品简介</span>
+        <h2>风月大帝讲的是一个怎样的故事</h2>
+        <p>先用一段话回答最直接的疑问，再展开它的题材特征、叙事重心和阅读门槛。</p>
+      </div>
+
+      <div class="intro-grid">
+        <div class="prose">
+          <p>
+            <strong>风月大帝</strong>属于典型的东方玄幻长篇叙事：故事以一名出身并不显赫的少年为起点，
+            在宗门、家族、王朝与更高层次势力交织的世界里，凭机缘、心性与一次次生死抉择逐步走上强者之路。
+            书名中的“风月”更接近一种气质与意象——既有江湖风流，也有红尘历练；
+            而“大帝”指向的则是这条路的终点：登临绝顶、执掌一方的至尊之位。
+          </p>
+          <p>
+            这类作品的看点通常不在单一的打斗场面，而在于三层结构的同时推进：
+            一是主角个人修为与心境的成长，二是他与身边同伴、对手之间关系的不断重组，
+            三是更大格局下势力版图的此消彼长。风月大帝的叙事重心也大体落在这三层之上，
+            因此它更适合喜欢长线铺垫、势力博弈和人物群像的读者。
+          </p>
+          <div class="quote-box">
+            阅读提示：不同平台、不同转载来源对同一书名的收录情况可能并不一致，
+            章节编号、卷名与完结状态也可能存在差异。开始阅读前，建议先确认来源是否完整、更新是否连续。
+          </div>
+          <p>
+            如果你此前没有读过这类作品，可以把它理解为一种“慢热型”长篇：
+            前期重在建立人物关系与世界规则，中期进入势力对抗与地图扩张，
+            后期则收束主线、处理帝路归属与人物结局。理解这个节奏，
+            就不容易在前几十章因为铺垫较多而误判作品走向。
+          </p>
+          <p>
+            需要说明的是，本页是对作品概念与阅读方式的整理说明，不提供正文内容转载，
+            也不对具体情节细节做超出公开范围的断言。涉及人物结局、卷章划分等信息，
+            请以你所使用的阅读平台实际呈现为准。
+          </p>
+        </div>
+
+        <aside class="aside-panel">
+          <h3>题材标签</h3>
+          <div class="chip-list">
+            <span class="chip">东方玄幻</span>
+            <span class="chip">修真成长</span>
+            <span class="chip">帝路争锋</span>
+            <span class="chip">宗门势力</span>
+            <span class="chip">群像叙事</span>
+            <span class="chip">红尘历练</span>
+            <span class="chip">长线铺垫</span>
+            <span class="chip">热血战斗</span>
+          </div>
+          <h3 style="margin-top:24px">适合谁读</h3>
+          <p style="font-size:14.5px;color:var(--ink-soft)">
+            偏好世界观宏大、愿意跟随主角长期成长、对势力博弈与人物关系感兴趣的读者，
+            通常更容易进入这部作品。若你更偏好短篇快节奏、单线推进的故事，
+            可能会觉得前期节奏偏慢。
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 人物设定 -->
+  <section class="section alt" id="characters">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">人物设定</span>
+        <h2>读懂风月大帝，先理清这几类角色</h2>
+        <p>长篇玄幻的人物往往按功能分层。抓住角色在故事中承担的作用，比记住名字更有效。</p>
+      </div>
+
+      <div class="char-grid">
+        <article class="char-card">
+          <div class="char-avatar">主</div>
+          <h3>主角</h3>
+          <span class="char-role">成长轴心</span>
+          <p>故事的视角中心，从低起点出发，通过机缘与抉择不断突破。他的性格底色与处事方式，决定了整部作品的价值观走向。</p>
+        </article>
+        <article class="char-card">
+          <div class="char-avatar">伴</div>
+          <h3>同行者</h3>
+          <span class="char-role">情感与支撑</span>
+          <p>包括挚友、同门与情感线人物。他们既提供情感支点，也常在中后期成为推动主角做出关键决定的重要变量。</p>
+        </article>
+        <article class="char-card">
+          <div class="char-avatar">敌</div>
+          <h3>对手与反派</h3>
+          <span class="char-role">冲突来源</span>
+          <p>从同辈天才到更高层势力，对手的层次决定了主角成长的天花板。优秀的反派往往有自己的立场与逻辑，而非单纯的阻碍。</p>
+        </article>
+        <article class="char-card">
+          <div class="char-avatar">长</div>
+          <h3>引路人与长辈</h3>
+          <span class="char-role">规则传递者</span>
+          <p>师长、家族长辈或隐世强者，承担着交代世界规则、传授功法与阶段性托举的功能，也常是伏笔的埋设者。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 世界观 -->
+  <section class="section" id="lore">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">世界观脉络</span>
+        <h2>从个人修行到帝位之争的三层结构</h2>
+        <p>玄幻长篇的世界观通常层层外扩。理解这三层，阅读时就不容易被大量新名词打乱节奏。</p>
+      </div>
+
+      <div class="lore">
+        <article class="lore-item">
+          <b>第一层</b>
+          <h3>修为体系</h3>
+          <p>境界划分是这类作品的骨架。它规定了角色强弱的基本标尺，也决定了每一阶段主角能接触到的资源与对手层级。读时留意境界名称的递进关系，就能大致判断剧情处于哪个阶段。</p>
+        </article>
+        <article class="lore-item">
+          <b>第二层</b>
+          <h3>势力版图</h3>
+          <p>宗门、家族、王朝与隐秘势力共同构成博弈场。势力之间的关系并非静止，随着主角成长，原本遥不可及的存在会逐步进入视野，形成地图式的层层扩张。</p>
+        </article>
+        <article class="lore-item">
+          <b>第三层</b>
+          <h3>帝路与宿命</h3>
+          <p>“大帝”之名往往意味着一个时代只能有一位登顶者。围绕这个位置产生的争夺、传承与代价，通常是全书最终收束的方向，也是书名最直接的落点。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 阅读指南 -->
+  <section class="section alt" id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">阅读指南</span>
+        <h2>第一次读风月大帝，建议这样安排</h2>
+        <p>长篇作品的阅读体验，很大程度取决于入口选择与节奏控制。以下建议按顺序执行即可。</p>
+      </div>
+
+      <div class="guide-list">
+        <article class="guide-item">
+          <div class="guide-num">01</div>
+          <div>
+            <h3>先确认来源与完整性</h3>
+            <p>同一书名的不同来源可能存在章节缺失、顺序错乱或卷名不一致的情况。开始阅读前先核对目录结构是否连续，避免中途因断章而弃读。</p>
+          </div>
+        </article>
+        <article class="guide-item">
+          <div class="guide-num">02</div>
+          <div>
+            <h3>前三十章不要急着下判断</h3>
+            <p>这一阶段主要承担人物登场、关系建立与规则交代的功能，冲突烈度通常不高。若你关注的是世界观与后续格局，建议至少读到第一个阶段性高潮再做取舍。</p>
+          </div>
+        </article>
+        <article class="guide-item">
+          <div class="guide-num">03</div>
+          <div>
+            <h3>建立自己的名词笔记</h3>
+            <p>玄幻长篇会持续引入境界、功法、地名与势力名称。用简短的笔记记录关键名词之间的从属关系，能显著降低中期的理解成本。</p>
+          </div>
+        </article>
+        <article class="guide-item">
+          <div class="guide-num">04</div>
+          <div>
+            <h3>按卷而非按章推进</h3>
+            <p>以卷为单位安排阅读，比逐章追更更容易保持对整体节奏的把握。每读完一卷，回顾一次人物关系的变化，阅读体验会更连贯。</p>
+          </div>
+        </article>
+        <article class="guide-item">
+          <div class="guide-num">05</div>
+          <div>
+            <h3>留意伏笔而非只追打斗</h3>
+            <p>这类作品的高光往往来自前期埋设的线索在后期被回收。阅读时留意反复出现的意象、旧物与人物承诺，会更容易体会到结构上的呼应。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 章节速览 -->
+  <section class="section" id="chapters">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">章节速览</span>
+        <h2>长篇玄幻常见的阶段划分</h2>
+        <p>下表描述的是这类作品普遍存在的叙事阶段，用于帮助你判断当前进度所处的位置，不针对具体章节编号。</p>
+      </div>
+
+      <table class="chapter-table">
+        <thead>
+          <tr>
+            <th>阶段</th>
+            <th>主要任务</th>
+            <th>阅读关注点</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>开篇期</td>
+            <td>主角登场、身世铺垫、初次机缘</td>
+            <td>人物性格底色与初始动机</td>
+          </tr>
+          <tr>
+            <td>成长期</td>
+            <td>入门修行、同辈竞争、小范围冲突</td>
+            <td>境界体系与基础规则</td>
+          </tr>
+          <tr>
+            <td>扩张期</td>
+            <td>势力交锋、地图外扩、同伴集结</td>
+            <td>势力关系与人物群像变化</td>
+          </tr>
+          <tr>
+            <td>转折期</td>
+            <td>重大变故、立场重组、代价显现</td>
+            <td>前期伏笔的回收情况</td>
+          </tr>
+          <tr>
+            <td>收束期</td>
+            <td>帝路归属、主线闭合、人物结局</td>
+            <td>主题落点与整体结构完成度</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section alt" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">常见问题</span>
+        <h2>关于风月大帝的常见疑问</h2>
+        <p>整理读者在搜索这个名字时最常提出的几个问题，并给出稳妥、可核实的回答思路。</p>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3>风月大帝是什么类型的作品？</h3>
+          <p>从题材特征看，它属于东方玄幻范畴，核心是主角在修行世界中逐步成长并最终走向至尊之位的过程，同时包含势力博弈与人物群像描写。</p>
+        </article>
+        <article class="faq-item">
+          <h3>没有读过玄幻，可以直接从这本开始吗？</h3>
+          <p>可以，但需要接受前期的铺垫节奏。建议先读三十章左右感受叙事风格，如果对世界观与人物关系产生兴趣，再继续深入会更顺畅。</p>
+        </article>
+        <article class="faq-item">
+          <h3>为什么不同地方的章节对不上？</h3>
+          <p>网络小说在不同平台转载、分卷或修订时，章节编号与卷名可能出现差异，也可能存在缺章。遇到这种情况，建议更换来源或对照目录结构核对。</p>
+        </article>
+        <article class="faq-item">
+          <h3>阅读时容易记混人物怎么办？</h3>
+          <p>可以按“立场”而非“名字”来记：先分清主角阵营、对手阵营与中立势力，再补充具体人物。这样即使新角色不断出现，也不会失去整体判断。</p>
+        </article>
+        <article class="faq-item">
+          <h3>本页是否提供正文阅读？</h3>
+          <p>不提供。本页是围绕“风月大帝”这一关键词整理的作品资料与阅读方法说明，正文内容请通过正规阅读渠道获取。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>风月大帝 · 作品资料站</h4>
+        <p>
+          本站围绕“风月大帝”这一关键词，整理作品题材定位、人物功能分层、世界观结构与阅读方法，
+          供读者在开始阅读前建立整体认知。页面内容为资料性整理，不转载正文。
+        </p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul class="footer-links">
+          <li><a href="#intro">作品简介</a></li>
+          <li><a href="#characters">人物设定</a></li>
+          <li><a href="#lore">世界观脉络</a></li>
+          <li><a href="#guide">阅读指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>延伸内容</h4>
+        <ul class="footer-links">
+          <li><a href="#chapters">章节阶段速览</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#top">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>内容仅供阅读参考，具体信息请以实际阅读平台为准。</span>
+      <span>风月大帝 · 作品资料整理</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      nav.classList.toggle('open');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('open');
+      }
+    });
+  }
+
+  var links = nav ? nav.querySelectorAll('a') : [];
+  var sections = [];
+  links.forEach(function(a){
+    var id = a.getAttribute('href');
+    if(id && id.charAt(0) === '#'){
+      var el = document.querySelector(id);
+      if(el){ sections.push({link:a, el:el}); }
+    }
+  });
+
+  if('IntersectionObserver' in window && sections.length){
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          sections.forEach(function(item){
+            item.link.classList.toggle('active', item.el === entry.target);
+          });
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px', threshold:0});
+    sections.forEach(function(item){ observer.observe(item.el); });
+  }
+})();
+</script>
+
+</body>
+            </html>
