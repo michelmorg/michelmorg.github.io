@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>秋季菜谱-应季食材家常做法与润燥养生指南</title>
+<meta name="description" content="秋季菜谱专题，围绕秋梨、莲藕、南瓜、山药、板栗、银耳等应季食材，整理家常菜、汤羹、粥品与润燥食谱，附选购处理与烹饪要点，帮助你在秋天吃得更应季、更舒服。">
+<meta name="keywords" content="秋季菜谱,秋天吃什么,应季食材,润燥食谱,秋季汤羹,家常菜做法,秋梨,莲藕,南瓜,山药">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --leaf:#b4532a;
+    --leaf-deep:#8c3d1c;
+    --amber:#d98a2b;
+    --cream:#fdf7ef;
+    --paper:#ffffff;
+    --ink:#33291f;
+    --ink-soft:#6b5c4d;
+    --line:#ecdfd0;
+    --green:#5c7a4a;
+    --radius:14px;
+    --shadow:0 6px 20px rgba(120,80,40,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.75;
+    font-size:16px;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- 页眉 ---------- */
+  .site-header{
+    background:linear-gradient(120deg,#8c3d1c 0%,#b4532a 55%,#d98a2b 100%);
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+  }
+  .site-header::after{
+    content:"";
+    position:absolute;
+    right:-60px;top:-60px;
+    width:260px;height:260px;
+    background:radial-gradient(circle,rgba(255,235,200,.35),transparent 70%);
+    border-radius:50%;
+  }
+  .header-top{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:18px 0;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-mark{
+    width:44px;height:44px;flex:0 0 44px;
+    border-radius:12px;
+    background:rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.35);
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;
+  }
+  .brand-name{font-size:20px;font-weight:700;letter-spacing:.5px;}
+  .brand-sub{font-size:12px;opacity:.85;letter-spacing:2px;}
+  .header-nav{display:flex;gap:6px;flex-wrap:wrap;}
+  .header-nav a{
+    padding:7px 14px;border-radius:999px;font-size:14px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.18);
+    transition:.25s;
+  }
+  .header-nav a:hover{background:rgba(255,255,255,.28);}
+
+  /* ---------- 首屏 ---------- */
+  .hero{padding:34px 0 46px;position:relative;z-index:2;}
+  .hero-grid{
+    display:grid;grid-template-columns:1.35fr 1fr;gap:34px;align-items:start;
+  }
+  .hero h1{
+    font-size:34px;line-height:1.35;font-weight:800;
+    letter-spacing:.5px;margin-bottom:16px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(180deg,transparent 62%,rgba(255,226,160,.55) 62%);
+    padding:0 2px;
+  }
+  .hero-lead{font-size:16px;color:rgba(255,255,255,.92);margin-bottom:22px;max-width:640px;}
+  .hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px;}
+  .hero-tags span{
+    font-size:13px;padding:5px 12px;border-radius:999px;
+    background:rgba(255,255,255,.16);
+    border:1px dashed rgba(255,255,255,.35);
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:12px 26px;border-radius:999px;
+    font-size:15px;font-weight:600;transition:.25s;border:1px solid transparent;
+    cursor:pointer;
+  }
+  .btn-primary{background:#fff;color:var(--leaf-deep);box-shadow:0 6px 16px rgba(0,0,0,.14);}
+  .btn-primary:hover{transform:translateY(-2px);}
+  .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.16);}
+
+  .hero-side{
+    background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:var(--radius);
+    padding:22px 22px 18px;
+    backdrop-filter:blur(2px);
+  }
+  .hero-side h2{font-size:16px;margin-bottom:14px;font-weight:700;letter-spacing:1px;}
+  .hero-side ul{list-style:none;}
+  .hero-side li{
+    display:flex;gap:10px;align-items:flex-start;
+    font-size:14px;padding:8px 0;
+    border-bottom:1px dashed rgba(255,255,255,.22);
+    color:rgba(255,255,255,.94);
+  }
+  .hero-side li:last-child{border-bottom:none;}
+  .hero-side li b{color:#ffe6b8;font-weight:700;flex:0 0 auto;}
+
+  /* ---------- 通用区块 ---------- */
+  section{padding:52px 0;}
+  .sec-head{margin-bottom:30px;display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+  .sec-head h2{
+    font-size:25px;font-weight:800;position:relative;padding-left:16px;line-height:1.3;
+  }
+  .sec-head h2::before{
+    content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;
+    border-radius:4px;background:linear-gradient(180deg,var(--leaf),var(--amber));
+  }
+  .sec-head p{font-size:14px;color:var(--ink-soft);max-width:560px;}
+
+  /* ---------- 应季食材 ---------- */
+  .ingredient-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+  }
+  .ing-card{
+    background:var(--paper);border-radius:var(--radius);
+    padding:20px 18px;box-shadow:var(--shadow);
+    border:1px solid var(--line);
+    transition:.25s;
+  }
+  .ing-card:hover{transform:translateY(-4px);border-color:#e6c9a8;}
+  .ing-icon{
+    width:46px;height:46px;border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;margin-bottom:12px;
+    background:#fbeee0;
+  }
+  .ing-card h3{font-size:17px;margin-bottom:8px;}
+  .ing-card p{font-size:13.5px;color:var(--ink-soft);}
+  .ing-card .pick{
+    display:inline-block;margin-top:10px;font-size:12.5px;color:var(--leaf);
+    background:#fdf1e6;padding:3px 10px;border-radius:999px;
+  }
+
+  /* ---------- 菜谱列表 ---------- */
+  .recipe-layout{display:grid;grid-template-columns:2.2fr 1fr;gap:30px;align-items:start;}
+  .recipe-list{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .recipe-card{
+    background:var(--paper);border-radius:var(--radius);
+    border:1px solid var(--line);box-shadow:var(--shadow);
+    padding:22px;display:flex;flex-direction:column;gap:12px;
+  }
+  .recipe-top{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .recipe-cat{
+    font-size:12px;padding:3px 10px;border-radius:6px;
+    background:#eef3e8;color:var(--green);font-weight:600;
+  }
+  .recipe-time{font-size:12.5px;color:var(--ink-soft);}
+  .recipe-card h3{font-size:18px;line-height:1.45;}
+  .recipe-card p{font-size:14px;color:var(--ink-soft);}
+  .recipe-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;}
+  .recipe-meta span{
+    font-size:12.5px;color:#8a6a45;background:#fbf3e9;
+    padding:3px 9px;border-radius:6px;
+  }
+
+  .aside-box{
+    background:var(--paper);border:1px solid var(--line);
+    border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);
+    margin-bottom:22px;
+  }
+  .aside-box h3{
+    font-size:16px;margin-bottom:14px;padding-bottom:10px;
+    border-bottom:1px solid var(--line);
+  }
+  .aside-box ol,.aside-box ul{list-style:none;}
+  .aside-box li{
+    font-size:14px;padding:9px 0;border-bottom:1px dashed var(--line);
+    color:var(--ink-soft);display:flex;gap:8px;
+  }
+  .aside-box li:last-child{border-bottom:none;}
+  .aside-box li i{
+    font-style:normal;color:var(--amber);font-weight:700;flex:0 0 auto;
+  }
+  .aside-note{font-size:13px;color:var(--ink-soft);line-height:1.7;}
+
+  /* ---------- 烹饪要点 ---------- */
+  .tips-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .tips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .tip{
+    padding:22px;border-radius:var(--radius);
+    background:linear-gradient(160deg,#fffaf4,#fdf2e6);
+    border:1px solid #f0e0cd;
+  }
+  .tip h3{font-size:16.5px;margin-bottom:10px;color:var(--leaf-deep);}
+  .tip p{font-size:14px;color:var(--ink-soft);}
+
+  /* ---------- 一周安排 ---------- */
+  .week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;}
+  .day{
+    background:var(--paper);border:1px solid var(--line);border-radius:12px;
+    padding:16px 12px;text-align:center;box-shadow:var(--shadow);
+  }
+  .day b{display:block;font-size:14px;color:var(--leaf);margin-bottom:8px;}
+  .day span{display:block;font-size:13px;color:var(--ink-soft);line-height:1.6;}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:900px;}
+  .faq-item{
+    background:var(--paper);border:1px solid var(--line);border-radius:12px;
+    padding:18px 22px;margin-bottom:14px;
+  }
+  .faq-item h3{font-size:16px;margin-bottom:8px;color:var(--leaf-deep);}
+  .faq-item p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* ---------- 页脚 ---------- */
+  .site-footer{
+    background:#3a2b1f;color:#d9c9b8;padding:44px 0 26px;font-size:14px;
+  }
+  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:30px;margin-bottom:28px;}
+  .footer-grid h4{color:#fff;font-size:15px;margin-bottom:14px;}
+  .footer-grid p{color:#b8a695;line-height:1.8;}
+  .footer-grid ul{list-style:none;}
+  .footer-grid li{margin-bottom:9px;color:#b8a695;}
+  .footer-grid li a:hover{color:#f0c88a;}
+  .footer-bottom{
+    border-top:1px solid #4d3a2b;padding-top:18px;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    color:#9c8b7b;font-size:13px;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:1024px){
+    .ingredient-grid{grid-template-columns:repeat(2,1fr);}
+    .recipe-layout{grid-template-columns:1fr;}
+    .tips-grid{grid-template-columns:1fr;}
+    .week-grid{grid-template-columns:repeat(4,1fr);}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:760px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero h1{font-size:26px;}
+    .recipe-list{grid-template-columns:1fr;}
+    .week-grid{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:1fr;}
+    section{padding:38px 0;}
+    .sec-head h2{font-size:21px;}
+  }
+  @media (max-width:420px){
+    .ingredient-grid{grid-template-columns:1fr;}
+    .header-nav a{padding:6px 11px;font-size:13px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-top">
+      <div class="brand">
+        <div class="brand-mark">🍂</div>
+        <div>
+          <div class="brand-name">秋食记</div>
+          <div class="brand-sub">秋季菜谱</div>
+        </div>
+      </div>
+      <nav class="header-nav" aria-label="站内导航">
+        <a href="#ingredients">应季食材</a>
+        <a href="#recipes">家常菜谱</a>
+        <a href="#soups">汤羹粥品</a>
+        <a href="#tips">烹饪要点</a>
+        <a href="#week">一周安排</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1>秋季菜谱：跟着<em>应季食材</em>安排一日三餐</h1>
+          <p class="hero-lead">
+            秋天食材丰富，气候也由热转凉、由湿转燥。这份秋季菜谱围绕当季常见的蔬菜、水果、菌菇和杂粮，
+            整理出适合家庭操作的家常菜、汤羹与粥品，并说明食材挑选、处理和搭配的基本思路，
+            方便你按口味和手边条件自由组合，而不是照搬固定菜单。
+          </p>
+          <div class="hero-tags">
+            <span>润燥为先</span>
+            <span>少辛增酸</span>
+            <span>荤素搭配</span>
+            <span>蒸煮为主</span>
+            <span>温热入口</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#recipes">查看家常菜谱</a>
+            <a class="btn btn-ghost" href="#ingredients">先挑应季食材</a>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <h2>秋季下厨的三个基本判断</h2>
+          <ul>
+            <li><b>看气候</b>秋燥明显时，多安排汤羹、蒸菜和水分充足的水果。</li>
+            <li><b>看体质</b>怕冷的人少用大量生冷凉拌，可改用焯拌或温拌。</li>
+            <li><b>看餐次</b>早晚温差大，早餐宜温热，晚餐不宜过饱过油。</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 应季食材 -->
+  <section id="ingredients">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>秋季常见应季食材</h2>
+        <p>不同地区入秋时间和物产差异较大，以下为多数地区秋季较常见的食材，可按当地市场实际供应选择。</p>
+      </div>
+
+      <div class="ingredient-grid">
+        <article class="ing-card">
+          <div class="ing-icon">🍐</div>
+          <h3>梨</h3>
+          <p>水分足、口感清甜，生吃爽脆，也常用来炖煮。做汤羹时切块后小火慢煮，风味更柔和。</p>
+          <span class="pick">挑选：果形端正、手感沉实</span>
+        </article>
+
+        <article class="ing-card">
+          <div class="ing-icon">🪷</div>
+          <h3>莲藕</h3>
+          <p>七孔藕偏粉糯，适合炖汤；九孔藕偏脆嫩，适合清炒或凉拌。切开后泡淡醋水可减缓变色。</p>
+          <span class="pick">挑选：藕节短粗、无黑斑</span>
+        </article>
+
+        <article class="ing-card">
+          <div class="ing-icon">🎃</div>
+          <h3>南瓜</h3>
+          <p>质地绵密、自带甜味，蒸、煮、烤都合适，也常与小米、大米同煮成粥。</p>
+          <span class="pick">挑选：表皮硬实、瓜蒂干燥</span>
+        </article>
+
+        <article class="ing-card">
+          <div class="ing-icon">🍠</div>
+          <h3>山药</h3>
+          <p>可蒸可炒可炖。削皮时建议戴手套，避免黏液接触皮肤引起发痒；切好后浸水防氧化。</p>
+          <span class="pick">挑选：断面洁白、质地紧实</span>
+        </article>
+
+        <article class="ing-card">
+          <div class="ing-icon">🌰</div>
+          <h3>板栗</h3>
+          <p>适合与肉类同烧或煮粥。去壳前可在壳上划口，煮或烤后趁热剥更容易。</p>
+          <span class="pick">挑选：颗粒饱满、无虫眼</span>
+        </article>
+
+        <article class="ing-card">
+          <div class="ing-icon">🍄</div>
+          <h3>菌菇</h3>
+          <p>香菇、平菇、杏鲍菇等秋季常见。清洗时快速冲淋即可，避免长时间浸泡影响口感。</p>
+          <span class="pick">挑选：菌盖完整、无异味</span>
+        </article>
+
+        <article class="ing-card">
+          <div class="ing-icon">⚪</div>
+          <h3>银耳</h3>
+          <p>需提前泡发并去除黄色根部，撕成小朵后小火慢炖，出胶效果更好。</p>
+          <span class="pick">挑选：色泽自然、无刺鼻气味</span>
+        </article>
+
+        <article class="ing-card">
+          <div class="ing-icon">🌾</div>
+          <h3>小米与杂粮</h3>
+          <p>与南瓜、山药、红枣等搭配煮粥，是秋季早餐的常见选择，注意控制煮制时间以免过稠。</p>
+          <span class="pick">挑选：颗粒均匀、无霉味</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 家常菜谱 -->
+  <section id="recipes" style="background:#fffaf4;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>秋季家常菜谱推荐</h2>
+        <p>以下菜谱以家庭灶具和常见调味为基础，口味偏清淡温和，可根据家人习惯调整咸淡与油量。</p>
+      </div>
+
+      <div class="recipe-layout">
+        <div class="recipe-list">
+
+          <article class="recipe-card">
+            <div class="recipe-top">
+              <span class="recipe-cat">热菜</span>
+              <span class="recipe-time">约 25 分钟</span>
+            </div>
+            <h3>莲藕炒肉片</h3>
+            <p>脆藕切片后焯水十几秒再过凉，肉片用少许生抽和淀粉抓匀。热锅快炒，藕片保持脆爽，肉片嫩滑，适合搭配米饭。</p>
+            <div class="recipe-meta">
+              <span>莲藕</span><span>猪肉</span><span>快炒</span>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-top">
+              <span class="recipe-cat">热菜</span>
+              <span class="recipe-time">约 30 分钟</span>
+            </div>
+            <h3>板栗烧鸡块</h3>
+            <p>鸡块先煸出油脂，加姜片和少量酱油上色，再放入板栗与热水同烧。小火焖至板栗软糯，收汁时注意翻动避免粘锅。</p>
+            <div class="recipe-meta">
+              <span>板栗</span><span>鸡肉</span><span>焖烧</span>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-top">
+              <span class="recipe-cat">蒸菜</span>
+              <span class="recipe-time">约 20 分钟</span>
+            </div>
+            <h3>蒜蓉蒸南瓜</h3>
+            <p>南瓜去皮切厚片摆盘，蒜末用少量油炒香后铺在上面，上汽后蒸熟即可。南瓜本身带甜，调味宜轻。</p>
+            <div class="recipe-meta">
+              <span>南瓜</span><span>蒜</span><span>清蒸</span>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-top">
+              <span class="recipe-cat">热菜</span>
+              <span class="recipe-time">约 20 分钟</span>
+            </div>
+            <h3>山药木耳小炒</h3>
+            <p>山药切片泡水，木耳提前泡发撕小朵。先炒木耳再下山药，出锅前加盐调味，口感清爽，适合搭配油腻主菜。</p>
+            <div class="recipe-meta">
+              <span>山药</span><span>木耳</span><span>清淡</span>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-top">
+              <span class="recipe-cat">凉拌</span>
+              <span class="recipe-time">约 15 分钟</span>
+            </div>
+            <h3>温拌手撕杏鲍菇</h3>
+            <p>杏鲍菇蒸熟后撕成条，趁温热加少量生抽、香醋和香油拌匀。秋季气温转凉，用温拌代替冰镇凉菜更合适。</p>
+            <div class="recipe-meta">
+              <span>杏鲍菇</span><span>温拌</span><span>低油</span>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-top">
+              <span class="recipe-cat">主食</span>
+              <span class="recipe-time">约 35 分钟</span>
+            </div>
+            <h3>南瓜小米粥</h3>
+            <p>小米淘洗后与南瓜块同煮，先大火烧开再转小火。喜欢稀一点可多加些水，煮好后焖几分钟口感更绵。</p>
+            <div class="recipe-meta">
+              <span>小米</span><span>南瓜</span><span>早餐</span>
+            </div>
+          </article>
+
+        </div>
+
+        <aside>
+          <div class="aside-box">
+            <h3>搭配思路速查</h3>
+            <ol>
+              <li><i>1</i>一荤一素一汤，是最省心的家常组合。</li>
+              <li><i>2</i>根茎类配肉类，口感互补，也更容易吃饱。</li>
+              <li><i>3</i>菌菇类适合与清淡蔬菜同炒，提鲜不抢味。</li>
+              <li><i>4</i>粥品可作早餐或晚餐主食，注意搭配蛋白质。</li>
+              <li><i>5</i>同一食材换做法，比每天换食材更容易操作。</li>
+            </ol>
+          </div>
+
+          <div class="aside-box">
+            <h3>调味小提示</h3>
+            <p class="aside-note">
+              秋季做菜可适当减少辣椒、花椒等辛香调料的用量，多用葱、姜、蒜、香醋和少量糖来提味。
+              汤羹类以盐和少许白胡椒调味即可，避免过咸掩盖食材本身的清甜。
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 汤羹粥品 -->
+  <section id="soups">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>汤羹与粥品：秋燥时节的温和选择</h2>
+        <p>天气转干时，很多人会想喝点汤水。以下做法以食材本味为主，不依赖浓汤宝或大量油脂。</p>
+      </div>
+
+      <div class="recipe-list">
+        <article class="recipe-card">
+          <div class="recipe-top">
+            <span class="recipe-cat">甜汤</span>
+            <span class="recipe-time">约 60 分钟</span>
+          </div>
+          <h3>银耳雪梨羹</h3>
+          <p>银耳泡发撕小朵，先单独炖至软糯，再放入雪梨块继续煮二十分钟左右。甜度可用少量冰糖调整，也可不加。</p>
+          <div class="recipe-meta"><span>银耳</span><span>雪梨</span><span>慢炖</span></div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-top">
+            <span class="recipe-cat">咸汤</span>
+            <span class="recipe-time">约 50 分钟</span>
+          </div>
+          <h3>莲藕排骨汤</h3>
+          <p>排骨焯水后与姜片同炖，中途加入藕块。选粉藕更容易炖出绵软口感，出锅前再放盐，汤味更清。</p>
+          <div class="recipe-meta"><span>莲藕</span><span>排骨</span><span>炖煮</span></div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-top">
+            <span class="recipe-cat">粥品</span>
+            <span class="recipe-time">约 40 分钟</span>
+          </div>
+          <h3>山药红枣粥</h3>
+          <p>大米或小米煮至开花后加入山药块和去核红枣，再煮十分钟左右。红枣本身有甜味，一般无需额外加糖。</p>
+          <div class="recipe-meta"><span>山药</span><span>红枣</span><span>早餐</span></div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-top">
+            <span class="recipe-cat">羹汤</span>
+            <span class="recipe-time">约 25 分钟</span>
+          </div>
+          <h3>香菇豆腐羹</h3>
+          <p>香菇切丁炒香，加水和豆腐块煮开，用水淀粉勾薄芡，最后淋入蛋液。适合作为晚餐的一道热汤。</p>
+          <div class="recipe-meta"><span>香菇</span><span>豆腐</span><span>快手</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 烹饪要点 -->
+  <section id="tips" class="tips-band">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>秋季下厨的实用要点</h2>
+        <p>季节变化带来的不只是食材不同，处理方式和火候也需要相应调整。</p>
+      </div>
+
+      <div class="tips-grid">
+        <article class="tip">
+          <h3>根茎类先处理再下锅</h3>
+          <p>莲藕、山药、土豆等切开后容易氧化变色，切好后浸在清水中，下锅前沥干。需要久炖的先焯水，可减少浮沫和涩味。</p>
+        </article>
+        <article class="tip">
+          <h3>汤羹火候比调料重要</h3>
+          <p>银耳、莲藕、排骨这类食材需要足够时间才能出味。先大火烧开再转小火，中途尽量少加冷水，避免影响口感。</p>
+        </article>
+        <article class="tip">
+          <h3>控制油盐，突出本味</h3>
+          <p>南瓜、板栗、红枣自带甜味，梨和莲藕清甜多汁，调味过重反而盖住风味。建议先少放，尝味后再补。</p>
+        </article>
+        <article class="tip">
+          <h3>剩菜合理保存</h3>
+          <p>汤类放凉后加盖冷藏，再次食用需彻底加热。绿叶菜和凉拌菜不建议隔夜，最好按人数控制每次的用量。</p>
+        </article>
+        <article class="tip">
+          <h3>注意个体差异</h3>
+          <p>食材选择要结合自身情况。对某些食材过敏、消化功能较弱或有特殊饮食要求的人，应遵医嘱安排饮食。</p>
+        </article>
+        <article class="tip">
+          <h3>按地区灵活调整</h3>
+          <p>南方入秋较晚、仍偏湿热，北方降温快、更干燥。同样的菜谱可以调整汤水比例和辛辣程度，不必完全照做。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 一周安排 -->
+  <section id="week">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>一周秋季菜谱参考安排</h2>
+        <p>仅为搭配思路示例，可根据采购情况、家人口味和时间灵活替换，不必严格对应。</p>
+      </div>
+
+      <div class="week-grid">
+        <div class="day"><b>周一</b><span>莲藕炒肉片<br>蒜蓉蒸南瓜<br>米饭</span></div>
+        <div class="day"><b>周二</b><span>山药木耳小炒<br>香菇豆腐羹<br>杂粮饭</span></div>
+        <div class="day"><b>周三</b><span>板栗烧鸡块<br>清炒时蔬<br>米饭</span></div>
+        <div class="day"><b>周四</b><span>温拌杏鲍菇<br>莲藕排骨汤<br>馒头</span></div>
+        <div class="day"><b>周五</b><span>南瓜小米粥<br>鸡蛋饼<br>凉拌木耳</span></div>
+        <div class="day"><b>周六</b><span>银耳雪梨羹<br>清蒸鱼<br>炒青菜</span></div>
+        <div class="day"><b>周日</b><span>山药红枣粥<br>家常豆腐<br>时令水果</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:#fffaf4;border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>关于秋季菜谱的常见问题</h2>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3>秋天一定要吃特定的“养生菜”吗？</h3>
+          <p>不必。所谓应季饮食，核心是选择当季新鲜、价格合理的食材，并注意烹饪方式与个人体质相匹配。日常饮食保持种类多样、荤素搭配、油盐适量，比追求某一道“必吃菜”更有意义。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>秋季菜谱里为什么常出现梨、银耳、莲藕？</h3>
+          <p>这些食材含水量较高、口感清润，在气候偏干的时候比较受欢迎，也容易做成汤羹类菜肴。它们属于日常食材，正常食用即可，不能替代任何药物治疗。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>天气转凉后还能吃凉拌菜吗？</h3>
+          <p>可以，但可以改成温拌：食材焯熟或蒸熟后趁温热调味，减少冰镇环节。肠胃比较敏感的人，建议以热菜和汤羹为主，凉拌菜适量食用。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>板栗、南瓜这类食材要不要控制用量？</h3>
+          <p>板栗、南瓜、山药等含淀粉较多，可以部分替代主食。如果一餐中已经有米饭、面条，可以适当减少主食量，避免整体摄入过多。有特殊饮食需求的人应遵医嘱安排。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>做汤羹时如何减少用盐？</h3>
+          <p>可以借助香菇、海带、番茄、玉米等自带鲜味的食材提味，出锅前再放盐；也可以把盐放在最后一步，尝过味道后再决定用量，通常比一开始就放更省。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>秋季菜谱适合给孩子和老人吗？</h3>
+          <p>多数蒸、煮、炖类菜肴质地柔软，适合全家食用。给孩子和老人做时，可减少调味料、把食材切得更小、炖得更软，并注意去除鱼刺、骨渣等。具体饮食安排应结合个人健康状况。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>秋食记 · 秋季菜谱</h4>
+        <p>围绕当季食材整理家常做法、汤羹粥品与搭配思路，帮助你在秋天用常见食材做出顺口、好操作的一日三餐。内容仅供参考，请结合当地物产与自身情况调整。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#ingredients">应季食材挑选</a></li>
+          <li><a href="#recipes">家常菜谱推荐</a></li>
+          <li><a href="#soups">汤羹与粥品</a></li>
+          <li><a href="#tips">烹饪要点</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用说明</h4>
+        <ul>
+          <li>菜谱用量可按人数增减</li>
+          <li>调味以清淡适口为准</li>
+          <li>食材过敏者请谨慎选择</li>
+          <li>特殊饮食需求请咨询专业人士</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>秋季菜谱 · 应季食材与家常做法整理</span>
+      <span>内容仅供日常烹饪参考</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var links = document.querySelectorAll('.header-nav a, .hero-actions a');
+    links.forEach(function(link){
+      link.addEventListener('click', function(e){
+        var href = this.getAttribute('href');
+        if(href && href.charAt(0) === '#'){
+          var target = document.querySelector(href);
+          if(target){
+            e.preventDefault();
+            var top = target.getBoundingClientRect().top + window.pageYOffset - 16;
+            window.scrollTo({top: top, behavior:'smooth'});
+          }
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+              </html>
